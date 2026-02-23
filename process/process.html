@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ChaiCycle | Waste to Wellness: Our Circular Story</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0f3e2e",
+                        "background-light": "#f4f1e8", // Soft beige as requested
+                        "background-dark": "#131f1b",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .step-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #0f3e2e;
+            opacity: 0.2;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class=" text-background-light p-1.5 rounded-lg">
+    <img src="../Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full">
+</div>
+<h2 class="text-xl font-black tracking-tighter uppercase">ChaiCycle</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold hover:text-primary/70 transition-colors" href="#">Our Story</a>
+<a class="text-sm font-semibold border-b-2 border-primary" href="#">The Process</a>
+<a class="text-sm font-semibold hover:text-primary/70 transition-colors" href="#">Products</a>
+<a class="text-sm font-semibold hover:text-primary/70 transition-colors" href="#">Sustainability</a>
+</nav>
+<div class="flex items-center gap-4">
+<a 
+  href="../shop/shop.html"
+  class="hidden sm:flex items-center justify-center rounded-full bg-primary text-white px-6 py-2.5 text-sm font-bold tracking-wide hover:bg-primary/90 transition-all"
+>
+  Shop Now
+</a>
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-primary/20 z-10"></div>
+<div class="absolute inset-0 scale-105" data-alt="Misty tea garden landscape in Darjeeling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDN-9OOdlkbfSJDRZ7lJHpxRoH4OeKxu5KnFAA3D6PjdypaIJIcDzoceDaTvyK5pmvBvogNyEzcZwBpPuw656fh6wTsbhUNtnFPYZkW78fTH0WAhw4J8-FCYFez-dtScu_sad0jbykHK2b9F6rcPoi9rdg5gCZLEh3_2uVTx_fLgY3e96CHrFNuHnoaP4acLZUhLsuP8of6fdTVE6YDGuk9JwhB9LCKI0IoGRwh6snItSkGeO2o4_QeB07I31Ncn84tUidhNEyn3LRY"); background-position: center; background-size: cover;'></div>
+<div class="relative z-20 text-center px-6 max-w-4xl">
+<span class="inline-block px-4 py-1.5 mb-6 rounded-full bg-background-light/20 backdrop-blur-md text-white text-xs font-bold uppercase tracking-[0.2em] border border-white/30">
+                    Our Mission
+                </span>
+<h1 class="text-5xl md:text-7xl font-black text-white leading-[1.1] tracking-tight mb-6">
+                    Waste to Wellness: <br/>Our Circular Story
+                </h1>
+<p class="text-lg md:text-xl text-white/90 font-medium max-w-2xl mx-auto leading-relaxed">
+                    From discarded tea leaves to premium sustainable products—discover our 100% circular ecosystem.
+                </p>
+</div>
+</section>
+<!-- Intro Mission Block -->
+<section class="py-24 px-6">
+<div class="max-w-3xl mx-auto text-center">
+<h3 class="text-2xl md:text-3xl font-bold leading-snug mb-8">
+                    We believe that luxury doesn't have to cost the Earth. ChaiCycle reclaims the soul of the tea garden, breathing new life into every discarded leaf.
+                </h3>
+<div class="w-20 h-1 bg-primary/30 mx-auto"></div>
+</div>
+</section>
+<!-- The Cycle: Vertical Timeline -->
+<section class="py-20 bg-primary/5 dark:bg-primary/20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col items-center mb-20 text-center">
+<h2 class="text-4xl font-black tracking-tight mb-4">Our Circular Process</h2>
+<p class="text-primary/60 dark:text-slate-400 font-medium max-w-lg uppercase tracking-widest text-sm">Four Steps from Earth to Soul</p>
+</div>
+<div class="relative step-line">
+<!-- Step 1 -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 group">
+<div class="md:text-right order-2 md:order-1">
+<span class="text-6xl font-black text-primary/10 mb-4 block group-hover:text-primary/30 transition-colors">01</span>
+<h3 class="text-2xl font-bold mb-4">Tea Garden Waste Collection</h3>
+<p class="text-lg text-primary/70 dark:text-slate-300 leading-relaxed max-w-md md:ml-auto">
+                                We partner directly with organic tea estates in Darjeeling to source nutrient-rich discarded leaves that would otherwise contribute to landfill methane.
+                            </p>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center z-20 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-xl">psychiatry</span>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Close up of organic tea leaves in a basket" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnX-H6ZXL5aW1lnwlvpMirhndrGak6i0q9oiWoONuxWzmdo6h3nCGoI3W36mRRoKpeGchX_A0jp7NyCf3rnB0bLk6Wp_KmhMNctAUU2G2N3iF7U-TSoqpTIFjR4pRKVzvkVdpgDC9pM4zsEc7zX9HF4oKVp4ev0ZWPEAzfGeMoScyqGCTmNx2MP0SHIyQUFteWnFViZWuGFJlw01gQ7SbeLepkrfEk0MX-4i8qAyyrmgv1LWwKyLV8FbRtl2LcySLk1BwAfwDnIYZ"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 group">
+<div class="relative order-1">
+<div class="absolute -right-6 md:-right-12 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center z-20 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-xl">factory</span>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Traditional tea processing machinery in Darjeeling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1r760plZXrpvmqtsQOUN0AspNDsuBmyWPNhYpRMqVL6MeSfMtElhqtMNgT9DAiR4ts8Hb8wLJHQpcggLHMPUZN9i5oO4nb7zBDTpPtypDKu4GcN_aoTqZrvQ5l96xgPoLNP7ZEgK0VFAhqgchHzQeAKqRJXZzs3W6qp9ecRaIQhFvGN_im2p_P80ubCXaNn2EsbPHwfIegJEea7bdMDpgzE25e3UYVfalxclrv8ZdjLC7cIxK9gjO03qc6yMDuE8y_FRxNVCtYmZK"/>
+</div>
+</div>
+<div class="text-left order-2">
+<span class="text-6xl font-black text-primary/10 mb-4 block group-hover:text-primary/30 transition-colors">02</span>
+<h3 class="text-2xl font-bold mb-4">Sustainable Processing</h3>
+<p class="text-lg text-primary/70 dark:text-slate-300 leading-relaxed max-w-md">
+                                In our eco-refinery, we use solar-powered cold-pressing techniques to extract pure botanical compounds without harsh chemical solvents.
+                            </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-32 group">
+<div class="md:text-right order-2 md:order-1">
+<span class="text-6xl font-black text-primary/10 mb-4 block group-hover:text-primary/30 transition-colors">03</span>
+<h3 class="text-2xl font-bold mb-4">Product Innovation</h3>
+<p class="text-lg text-primary/70 dark:text-slate-300 leading-relaxed max-w-md md:ml-auto">
+                                The extracted oils become base ingredients for our wellness range, while the remaining fibrous mass is compressed into biodegradable EcoWare.
+                            </p>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="absolute -left-6 md:-left-12 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center z-20 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-xl">science</span>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Laboratory bottles with essential oils and natural extracts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPVVKNAcz-yM0woqKyjd3KXlfDTSMoViR4TomuxQkJYRdnnzINpXDSltkcmBY7yEriOLVsQHa_qB9litjl4OYNNzSEV-ZcRTurUKxiv_kJ7nUdUoGcgAlncR2CyJLMpMeFv2uzoU3-XcOMZVhFjo9DIv1_2EvNaJxcSaUg-8t11sMWdRByAXEvHtFGccEJNvBjItp20kIT1xdE-fkis3CYlNNYJQ77HNAVHhEBNukHqFSqU32EpuYblsgj1tqnVr4ZrfgOvufjWQd3"/>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center group">
+<div class="relative order-1">
+<div class="absolute -right-6 md:-right-12 top-1/2 -translate-y-1/2 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center z-20 border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-xl">spa</span>
+</div>
+<div class="aspect-video rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A person enjoying a moment of wellness with a cup of tea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZWS1agJAqZpKc-M4Y27RFuY9zEZAKvS9vGn-6xFr-plR5umKW1NCukB-rOuNH7jKRLZnoHurDQmq9Ar7_w8IW37ah9aaCfrTVDyL-pKqiK5i4hYt1hvXdz5LITvcJxKh_FqSCocvzRLdcZ-mQdLkedgt6A4JNdovJNzk6pL2hggf4WqP_VedK6m_MF9tDNHgpMqr4DUrtohDbgG-OFTNNGcJWauGqZDUyE7hk8e28BSnhcR9dLRE6LynT_iHc16oGZoCs8iPl7akX"/>
+</div>
+</div>
+<div class="text-left order-2">
+<span class="text-6xl font-black text-primary/10 mb-4 block group-hover:text-primary/30 transition-colors">04</span>
+<h3 class="text-2xl font-bold mb-4">Consumer Wellness</h3>
+<p class="text-lg text-primary/70 dark:text-slate-300 leading-relaxed max-w-md">
+                                We deliver these pure, sustainable essentials to your doorstep, completing a cycle that benefits both the body and the planet.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Metrics Section -->
+<section class="py-24 px-6 bg-white dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black tracking-tight mb-4">Our Impact in Numbers</h2>
+<p class="text-primary/60 dark:text-slate-400 font-medium italic">Measurable change for a better world</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-10 rounded-2xl bg-background-light dark:bg-primary/10 border border-primary/5 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">delete_sweep</span>
+</div>
+<h4 class="text-5xl font-black mb-3">50k+</h4>
+<p class="text-sm font-bold uppercase tracking-widest text-primary/50">Kgs Waste Repurposed</p>
+</div>
+<div class="p-10 rounded-2xl bg-background-light dark:bg-primary/10 border border-primary/5 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">co2</span>
+</div>
+<h4 class="text-5xl font-black mb-3">30%</h4>
+<p class="text-sm font-bold uppercase tracking-widest text-primary/50">Carbon Footprint Reduced</p>
+</div>
+<div class="p-10 rounded-2xl bg-background-light dark:bg-primary/10 border border-primary/5 text-center flex flex-col items-center">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">all_inclusive</span>
+</div>
+<h4 class="text-5xl font-black mb-3">100%</h4>
+<p class="text-sm font-bold uppercase tracking-widest text-primary/50">Circular Ecosystem</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="py-24 px-6">
+<div class="max-w-5xl mx-auto bg-primary rounded-3xl p-12 md:p-20 relative overflow-hidden text-center text-white">
+<div class="absolute top-0 right-0 p-10 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[150px]">eco</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-black mb-6">Join the Movement</h2>
+<p class="text-lg text-white/80 max-w-xl mx-auto mb-10">
+                        Stay informed about our latest sustainable innovations and community impact stories. 
+                    </p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 rounded-full px-6 py-4 bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:ring-2 focus:ring-white/50 focus:border-transparent outline-none transition-all" placeholder="Enter your email" type="email"/>
+<button class="bg-white text-primary font-bold px-8 py-4 rounded-full hover:bg-background-light transition-colors whitespace-nowrap" type="submit">
+                            Subscribe
+                        </button>
+</form>
+<p class="mt-6 text-xs text-white/40 uppercase tracking-widest font-semibold">
+                        Pure products. Pure intentions. No spam.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark py-12 border-t border-primary/5">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+    
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3">
+      <img 
+        src="../Chaicycle.png" 
+        alt="chaicycle logo" 
+        class="w-8 h-8 object-contain rounded-full"
+      />
+      <span class="text-2xl font-black tracking-tighter text-primary">
+        CHAICYCLE
+      </span>
+    </a>
+
+    <!-- Links -->
+    <div class="flex flex-wrap justify-center md:justify-start gap-8 text-sm font-medium text-primary/60 dark:text-slate-400">
+      <a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+      <a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+      <a class="hover:text-primary transition-colors" href="#">Press Kit</a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm text-primary/40 dark:text-slate-500">
+      © 2024 ChaiCycle. All rights reserved.
+    </p>
+
+  </div>
+</footer>
+</body></html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Cycle Journal | ChaiCycle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec95",
+                        "sage": "#2F6F55",
+                        "forest": "#0a1a14",
+                        "background-light": "#fdfdfb",
+                        "background-dark": "#10221b",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Newsreader', serif;
+        }
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-sage/10 px-6 lg:px-20 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors">
+       <a href="../index.html"><img src="../Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-forest dark:text-primary text-2xl font-black tracking-tighter">CHAICYCLE</span> </a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Shop</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Heritage</a>
+<a class="text-sm font-medium text-primary border-b-2 border-primary" href="#">Journal</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Our Story</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="p-2 hover:bg-sage/10 rounded-full transition-colors">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button class="p-2 hover:bg-sage/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<span class="absolute top-1 right-1 size-2 bg-primary rounded-full"></span>
+</button>
+<div class="size-10 rounded-full overflow-hidden border border-sage/20">
+<img alt="Profile" data-alt="User profile circular avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpMpPCHQ5hGWB3h53rR424OE8B4WAQx_t90fOmtvdgdXNtfwwxIS3XhtGTt0pJeRLvCkp5V9DjDcEwkCNvFmG0qHf1e8vii1Xyu3b5U25rAX1qRDk7jC-FqZZavS1b-3R9CN9PwDYB3z3j0IwMWsFEnxa1wW3BP-Wy4nyJzPzUXRehO0YX7cNzs65qPHCb4kIejcfGuYJA09HawrWq-xueUC5r1Qgz9dCU3l2KNgL4IcDD8fPeVR1d3la0EHymGUsJ4qHEkIbRsRIv"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+<!-- Featured Hero Post -->
+<section class="mb-20">
+<div class="group relative overflow-hidden rounded-xl bg-forest aspect-[16/9] md:aspect-[21/9]">
+<img alt="Featured Article" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" data-alt="Mist-covered tea plantation in Darjeeling mountains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4bzOmyuUtghN8gb8PtQL4-dj4ARCooIx40ziS606xpBUVUeXYPrxeJP3RkBiN6tjDKo4ahCEX8YHFlcDmVmRydtFqX61JQ0v2sBkedksVhfb6Dv7YAowtK_PhO9P_Tu9NVlPp2bciUkxJuCH6dJPFsI9bvKLUL_5q9pEoo4pj-lQUS03H5vQp5Sj5jVViDvcf_n4TQjHU0pJ2zH2_2TA35Hik7fycpzxAnR-JGK2x2U6J4p3bf6w-7y65XvN-mL07YaBH7WF_8FEp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 md:p-16 max-w-3xl">
+<span class="inline-block px-3 py-1 bg-primary/20 backdrop-blur-sm border border-primary/30 text-primary text-xs font-bold tracking-widest uppercase rounded mb-4">
+                        Sustainability
+                    </span>
+<h2 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                        The Future of Tea: <br class="hidden md:block"/>Circular Innovation in Darjeeling
+                    </h2>
+<p class="text-slate-300 text-lg md:text-xl mb-8 font-light leading-relaxed italic">
+                        Explore how we are redefining the lifecycle of the tea leaf through regenerative farming and zero-waste processing.
+                    </p>
+<a class="inline-flex items-center gap-2 text-white font-semibold hover:text-primary transition-colors" href="#">
+                        Read the Full Story
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-sage/10 pb-6">
+<h3 class="text-3xl font-bold italic">The Cycle Journal</h3>
+<div class="flex flex-wrap gap-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+<button class="text-forest dark:text-white border-b-2 border-primary pb-1">All Stories</button>
+<button class="hover:text-primary transition-colors pb-1">Heritage</button>
+<button class="hover:text-primary transition-colors pb-1">Sustainability</button>
+<button class="hover:text-primary transition-colors pb-1">Wellness</button>
+<button class="hover:text-primary transition-colors pb-1">Rituals</button>
+</div>
+</div>
+</section>
+<!-- Article Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-24">
+<!-- Article 1 -->
+<article class="group">
+<div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Tea drying" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of traditional tea drying on woven bamboo trays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5Ege55GlxSs_5EMveoqF52OvIiGkR214fkNECIzid_ua7oZc-aekf-bQigkhzbDD8zO3Pshg8MLYarqeb8DzNmmDsE4tC6Viu6fJ4JDesg7YWmRyLsp3XogJVLB1HlknLizkDJXr7R1rzf54D2emUDXvdqYEXufrWA1JQAV3D2Fw5oZG14wyIfIqN5cRutSOJ-vyNq0HCnsa3yWoTukPE7UYCTy1GV5sieZZecIGvhOHd0Roj9pB4se2B6Wiz_41BPt0r-4nNwtxT"/>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-3 block">Heritage</span>
+<h4 class="text-2xl font-bold mb-3 leading-snug group-hover:text-sage transition-colors">The 100-Year-Old Drying Technique That Defines Our Flavor</h4>
+<p class="text-slate-600 dark:text-slate-400 font-light mb-4 line-clamp-3">Deep in the hills of Assam, master craftsmen still use the wind and shadow to cure leaves, a process that cannot be replicated by machines.</p>
+<a class="inline-flex items-center gap-1 text-sm font-bold border-b border-primary/30 hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Article 2 -->
+<article class="group">
+<div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Packaging" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist eco-friendly tea packaging on a stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiK7UMMF1yQCntFCT8sOk0OnQyAGXY2GMlPwRSVEHUM03nNnfpt_z1VeVed_A1P_5l47qCWPtoAxOaE32SbLJf992cOlAcHS9_m9ne30Ve2ice80DD5abdwz1TpnXpxwI6iEbuOZJDyLFcUQr7CiY-2uiwzwv-RIdkyhADtSDcdXNd3A_5upwipzy2BqdkzkN3ka986tRUPzhIjGFySfj9xZ5hOS4IGi-h-1-OWVN6XC8ykmA_o6z3ITInM-R64CzhIPG6Txx0dfMc"/>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-3 block">Sustainability</span>
+<h4 class="text-2xl font-bold mb-3 leading-snug group-hover:text-sage transition-colors">Compostable Packaging: From Earth to Earth</h4>
+<p class="text-slate-600 dark:text-slate-400 font-light mb-4 line-clamp-3">Our new fiber-based canisters disappear within 90 days in your home compost, completing the circle of life for our products.</p>
+<a class="inline-flex items-center gap-1 text-sm font-bold border-b border-primary/30 hover:border-primary transition-all" href="#">Read More</a>
+</article>
+<!-- Article 3 -->
+<article class="group">
+<div class="relative overflow-hidden rounded-lg aspect-[4/5] mb-6">
+<img alt="Morning ritual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Person holding a warm ceramic tea cup in soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM6tmjztJLV8I8b-3G7OhgIiTBsKrm59pEnr9q6Wl_OphlEWUGr0chalnjGMGM9pddFZhP9p0n24Z2w-CK-K51Shq7Y00gG0Hn16l8RY_ppgD9tVCjItCLukRINIL1h8jC7SMGPv6sZWSk3fRm2wy9mZlSd77M-iCKbx_lQiFXjm20YhrJnx_qNQDxn9BHlsKiU84QhTz8fLDOjLw82e3AoasEu0uz5rJbZ1wTsaCtXzYH4gejIJkZKArfixdgHSW-bFoIK85YFzVr"/>
+</div>
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-3 block">Wellness</span>
+<h4 class="text-2xl font-bold mb-3 leading-snug group-hover:text-sage transition-colors">Rituals for a Mindful Morning: The Art of Slow Steeping</h4>
+<p class="text-slate-600 dark:text-slate-400 font-light mb-4 line-clamp-3">How five minutes of intentional brewing can transform your cognitive performance and emotional baseline for the day.</p>
+<a class="inline-flex items-center gap-1 text-sm font-bold border-b border-primary/30 hover:border-primary transition-all" href="#">Read More</a>
+</article>
+</section>
+<!-- Newsletter Section -->
+<section class="relative overflow-hidden rounded-2xl bg-sage text-white px-8 py-16 md:p-20 mb-24">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<svg class="w-full h-full" fill="currentColor" viewbox="0 0 100 100">
+<path d="M50 0 L100 50 L50 100 L0 50 Z"></path>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl mx-auto text-center">
+<h2 class="text-4xl md:text-5xl font-bold mb-6 italic">Join the Cycle</h2>
+<p class="text-lg text-slate-100/80 mb-10 font-light italic">
+                    Receive exclusive early access to rare harvests and weekly stories from the heritage of tea, delivered with intention.
+                </p>
+<form class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+<div class="w-full sm:flex-1 relative">
+<input class="w-full px-6 py-4 rounded-lg bg-white/10 border border-white/20 focus:bg-white/20 focus:outline-none focus:ring-2 focus:ring-primary/50 text-white placeholder:text-white/50" placeholder="Enter your email address" type="email"/>
+</div>
+<button class="w-full sm:w-auto px-10 py-4 bg-primary text-forest font-bold rounded-lg hover:bg-primary/90 transition-all transform hover:scale-105" type="submit">
+                        Subscribe
+                    </button>
+</form>
+<p class="mt-6 text-xs text-white/40 uppercase tracking-widest">Small batches. No spam. Just tea.</p>
+</div>
+</section>
+<!-- More Articles -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<article class="flex flex-col md:flex-row gap-8 group">
+<div class="md:w-1/2 overflow-hidden rounded-lg aspect-square">
+<img alt="Tea varieties" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Top view of various loose leaf tea blends on a dark surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhDi6wJRKEPqYhVB4trk83IOrD2ScqOFIXeOYDHtxhcQw1xNOKklRs5-VTm4Qa4eQdWZIEsdz7Q_DQhXlSbyDIRupHC06VBN075PnWPUH9TUVKrFdWprnFOHCOnAcLkGC6Ga-EEFg2zpeVMa_64ybuYAoUEk5ua5jYRM3jBPhIp6sQBN1ntt9k9FGj0ELqCtJwR8_RgGnFeFESn64Cn7rC503is-2rIvdLVDWxRrOGvB97VR3ipa7wpjDv_aBMayMHMCqvngWhvixY"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-3">Discovery</span>
+<h4 class="text-2xl font-bold mb-3 leading-snug italic">Understanding Terroir: Why Altitude Matters</h4>
+<p class="text-slate-600 dark:text-slate-400 font-light text-sm mb-4">A deep dive into how the thin air of the Himalayas stresses the tea plant into producing concentrated aromatic compounds.</p>
+<a class="inline-flex items-center gap-1 text-sm font-bold border-b border-primary/30 hover:border-primary transition-all w-fit" href="#">Read More</a>
+</div>
+</article>
+<article class="flex flex-col md:flex-row gap-8 group">
+<div class="md:w-1/2 overflow-hidden rounded-lg aspect-square">
+<img alt="Archives" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Old handwritten letters and vintage tea tools on a wooden desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAam_9Hll_7ZhIxeTYCPKzCZ-F7ZMUlv6foQQNMByxr1VNdXcStxpAbqHEClfbDx3remg7ysD_To3aQ3yIv4pS831-Wv3xKyMO5ed18FdpJlXuQO2g4HTmq3H3ZGFmStnOLlvAOTaaH3h_GKntW6KGEKBW_3010CFrrhJHzr-zqIddvPD7sq_6YlNVO6Ub27oiR5vtl4UQ0wYuKn37sAomJxBiiN_VlRHVG79_FI6qytIUdEAAX0acROGgkzDXmqa-_dTDnw_veigHC"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<span class="text-xs font-bold text-primary tracking-widest uppercase mb-3">Archives</span>
+<h4 class="text-2xl font-bold mb-3 leading-snug italic">The Forgotten Diaries of the Tea Masters</h4>
+<p class="text-slate-600 dark:text-slate-400 font-light text-sm mb-4">We translated century-old logs from the first Darjeeling estates to rediscover lost fermentation profiles.</p>
+<a class="inline-flex items-center gap-1 text-sm font-bold border-b border-primary/30 hover:border-primary transition-all w-fit" href="#">Read More</a>
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-forest text-slate-400 py-20 px-6 lg:px-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+       <a href="./index.html"><img src="../Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-2xl font-black tracking-tighter text-primary">CHAICYCLE</span></a>
+<p class="text-sm font-light leading-relaxed italic">
+                    Dedicated to the circular journey of the world's most ancient beverage. From seed to sip and back to the soil.
+                </p>
+</div>
+<div>
+<h5 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Explore</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Our Collection</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Heritage Reserve</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Journal Entries</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Bulk Inquiries</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Mission</h5>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability Report</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carbon Tracking</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">The Foundation</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ethical Sourcing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-white text-sm font-bold uppercase tracking-widest mb-6">Follow The Cycle</h5>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all" href="#">
+<span class="material-symbols-outlined text-xl">camera</span>
+</a>
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all" href="#">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</a>
+<a class="size-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-forest transition-all" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-xs font-light">© 2024 ChaiCycle. All rights reserved. Handcrafted for a sustainable future.</p>
+<div class="flex gap-8 text-xs font-light">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-white transition-colors" href="#">Accessibility</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ChaiCycle | Sustainable Innovation from Darjeeling</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13eca0",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                        "forest": "#0F3D2E",
+                        "sage": "#2F6F55",
+                        "beige": "#F4F1E8"
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    animation: {
+                        'pulse-subtle': 'pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        'pulse-subtle': {
+                            '0%, 100%': { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(37, 211, 102, 0.4)' },
+                            '50%': { transform: 'scale(1.05)', boxShadow: '0 0 0 10px rgba(37, 211, 102, 0)' },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Work Sans', sans-serif;
+            }
+        }
+        .glass-nav {
+            background: rgba(244, 241, 232, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .product-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<header class="sticky top-0 z-50 glass-nav border-b border-sage/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-2 group cursor-pointer">
+<div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors">
+       <a href="./index.html"><img src="Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-forest dark:text-primary text-2xl font-black tracking-tighter">CHAICYCLE</span> </a>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-semibold text-forest/80 hover:text-primary transition-colors uppercase tracking-widest" href="./index.html">Home</a>
+<a class="text-sm font-semibold text-forest/80 hover:text-primary transition-colors uppercase tracking-widest border-b-2 border-primary" href="./shop/shop.html">Shop</a>
+<a class="text-sm font-semibold text-forest/80 hover:text-primary transition-colors uppercase tracking-widest" href="./blog/blog.html">About</a>
+<a class="text-sm font-semibold text-forest/80 hover:text-primary transition-colors uppercase tracking-widest" href="./process/process.html">Sustainability</a>
+<a class="text-sm font-semibold text-forest/80 hover:text-primary transition-colors uppercase tracking-widest" href="./contact/code.html">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<input class="w-64 bg-white/50 border-none rounded-lg py-2 pl-10 pr-4 text-sm focus:ring-1 focus:ring-primary" placeholder="Search products..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-2 text-sage text-xl">search</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">person</span></button>
+<button class="hover:text-primary transition-colors relative">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute -top-1 -right-1 bg-primary text-[10px] font-bold px-1 rounded-full text-forest">0</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main>
+<section class="relative h-[85vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-forest/40 z-10"></div>
+<img alt="Darjeeling tea gardens" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_k057BIqQUEnqY5iYbBz1PW5p37DOC_SwSu54YWfHYVraBm1n9rwo6JSFrkLuSvwnrp9You5-_WQuz5BrjQhxeKFOnyzv1CaCaITLyakgnldQNzgF3KZFVZJsEbCK7aE59GsFI5UeKrdt0ids7-u5oc-TsWkTZ0f3dP_Mk-y21YvOU7MawlnaYR03NA9JgF7zLwYKOoZYHpV6B2fJKbzrbaH6x_nTGEg6P8wucTEkNxkq_k1sV9Nqc9wn66LTZadN_5yax-Yp58-"/>
+</div>
+<div class="relative z-20 max-w-7xl mx-auto px-6 lg:px-10 w-full">
+<div class="max-w-2xl text-white">
+<p class="text-primary font-bold tracking-[0.3em] uppercase mb-4">Established in Darjeeling</p>
+<h1 class="text-6xl md:text-7xl font-black leading-[1.1] mb-6 tracking-tight">
+                    From the Heart of <br/><span class="text-primary">Darjeeling</span>
+</h1>
+<p class="text-xl md:text-2xl font-light text-slate-100 mb-10 border-l-4 border-primary pl-6">
+                    Tea for Tradition, Waste for Innovation. Reimagining the lifecycle of nature's finest leaves.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a href="./shop/shop.html"><button class="bg-primary hover:bg-white text-forest px-10 py-4 rounded-lg font-bold text-lg transition-all transform hover:-translate-y-1">
+                        Shop Now
+                    </button>
+<a href="./process/process.html"><button class="bg-white/10 backdrop-blur-md border border-white/20 hover:bg-white/20 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                        Our Process
+                    </button></a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-beige/50">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="text-3xl font-bold text-forest mb-2">Shop by Category</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<a class="text-sage font-semibold border-b border-sage/30 hover:text-primary transition-colors" href="#">Browse All</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="group cursor-pointer relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
+<img alt="Tea Oil" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAarNxhnwh_GM3eYSRXsPb0xeesziv3CwRuAUH9vrir97iTKbodhhkU5txyUgPi1PkeL6eTJz9JqcCZu_2sy7AJWlzDU-pSIzLdHwo1tvdciVcFEaLHVr-R2V08J--OV2JMNsGwRs1PGp0sTe5SjrLkGVNz4s0RdT1pmh5OrZxQRI4-cHF9bZ0voICQHGr_LODMefLHMKho9_tVY7iEATO7WKNQprW8YkrFEOkqWI1SBUVwdRINyawXV2C9YUfFaVbXR-64RIpyzvMH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-xl font-bold">Tea Oil</h3>
+<p class="text-sm text-primary">Wellness Reclaimed</p>
+</div>
+</div>
+<div class="group cursor-pointer relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
+<img alt="EcoWare" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS3Fb_bI_ErJYvndtYASiraou1HRlfgY7o7VHyOb5DW2JGUlRyPnq__hDewRRUhdm6qZxVYoka_uGg4dae579WqQw2TWOU7Ghir-7KKhQxJ6QrdaHmxFnq5W2Dywvk90jT__OHgXUw0F8j-CisxGWy4OnkH2oGxE3Nh1lEcqEGI0Ypr-A2A913ayPXX7O4HBPh5OQChCAcqXYVJp5i-KtCNgSjP_Wv90SfdC3opWaY-V6S9WOK6nn1ifKDlkAww6jimcPOCLiTYDdS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-xl font-bold">EcoWare</h3>
+<p class="text-sm text-primary">Dining with Purpose</p>
+</div>
+</div>
+<div class="group cursor-pointer relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
+<img alt="Packaging" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4AMlujCXEuGnGafxnNGnfCZnG6gTKKXSC99M9i8WmGwEP1apohGB1pR39fJZz0xDGKsiUeQuaPno40IF3Q7jL15jr8ALnN46AqgyyMg2F9JZUmmN_syQ5og3cCXSlWVmsY-JX_bPyYROaD73tHvkajrYHZugLOvTfXKnr5nne726-sz3cIPbAO5SrEIPE_8HjiAkAshlVB1zUReYAf8dH6YxVF6R3G2Bh64S9hREFh_C_TYIk5bAhabYBqYKMtMsyEwa1hAmFB43K"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-xl font-bold">Packaging</h3>
+<p class="text-sm text-primary">Industrial Innovation</p>
+</div>
+</div>
+<div class="group cursor-pointer relative overflow-hidden rounded-xl bg-white aspect-[4/5] shadow-sm hover:shadow-xl transition-all">
+<img alt="Wellness" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb_n4-P8bybKCxgZYHRs1M9av77lXXyHbTErZY2UhjdsUPROC1wqfNUm6vLdwAt_u7DZb77alNVDRkcsD148pkRtI89IBX6k4SA9O470i40wvdzVvYJAZHMyzU3isFATnSaumov5ekoUAmn8U_6zPenfU_jVdXydZW2TLwSWG8PrsGkM64xinetRjBd1Ndy0AFNJ3LtTkpF3jmV3jIGqxlA6Syg5ZxLsk7-gUkurlJtBxAGqzGczffrXpl-YrF5_gXKmUy0GsjQUU7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-forest/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-xl font-bold">Wellness</h3>
+<p class="text-sm text-primary">Naturally Restorative</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black text-forest mb-4 uppercase tracking-tighter">Featured Innovations</h2>
+<p class="text-sage max-w-xl mx-auto">Experience our first batch of premium products derived from upcycled tea plantation waste.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<div class="group product-card-hover p-4 rounded-2xl">
+<div class="relative overflow-hidden rounded-xl bg-beige mb-6">
+<span class="absolute top-4 left-4 z-10 bg-primary text-forest text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded">Coming Soon</span>
+<img alt="Essential Tea Seed Oil" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2k9jELMkIhlKsBM8VGm3tS2P5B8pRkc3lwf0Jzz4wp3TQ5DV1pbwPjzH8zVEkW9YwKk5-SjuuojspZR73FVbkmXel8-PoDKCWM2eETvWf2Q_LDOCG3wJPIDT8Aa8BhoUKY7-mBRLgK6DJyEvxjxQrOYpTRgOpRoFAKxxsiIxpli56XdYG7aHc51r_Dt6lIml3Tx1ls7TaMBi56s_Tvw9Iwxc62zcmHZBGFnTAlTiqWoVcpi2vqH1qEsFziShbYk5RxY4gZ6CUHNd3"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="text-xs text-sage ml-2 font-medium">(Pre-order Active)</span>
+</div>
+<h3 class="text-xl font-bold text-forest mb-1">Essential Tea Seed Oil</h3>
+<p class="text-sage text-sm mb-6">Cold-pressed from upcycled seeds for maximum nutrient density.</p>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+<div class="group product-card-hover p-4 rounded-2xl">
+<div class="relative overflow-hidden rounded-xl bg-beige mb-6">
+<span class="absolute top-4 left-4 z-10 bg-primary text-forest text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded">Coming Soon</span>
+<img alt="Tea Fiber Plates" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwsql6-ozozskODgCTySsuIcWXu8IRvrrM_9VIkn2gJeRzuTdPKdqqRkTXyN7O26D3Oei2V0jijs8xOKjx9q0-lVXGWpS-sImgmt1w3UtBV8pevA6-sk77dzUYdEJAzvNhg1daD78JHcgx0mQUgFSU3xRXq6EDcQnVfBZxq-pBWBcVvzTXGrCrB5WpHSmDOdBqGpEr1F5aa9W2I5XD3ZqhloHuziz38GSq3yjbSunYFeM4vxWCnYVrAUHtKPe8-97RxV5rXNZMRKzs"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="text-xs text-sage ml-2 font-medium">(Certified Compostable)</span>
+</div>
+<h3 class="text-xl font-bold text-forest mb-1">Tea Fiber Plates</h3>
+<p class="text-sage text-sm mb-6">Biodegradable tableware crafted from pressed tea plantation biomass.</p>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+<div class="group product-card-hover p-4 rounded-2xl">
+<div class="relative overflow-hidden rounded-xl bg-beige mb-6">
+<span class="absolute top-4 left-4 z-10 bg-primary text-forest text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded">Coming Soon</span>
+<img alt="Aromatic Wellness Kit" class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtMdKHYaWLXOyktBPvXNhveihYAjUPz9va53BV9ztozGi5vg_0rUew4u4iYtM21-FkzDmvrxtWsa7lZTIc4vVORVImUcw-wWWKxI6qY1stSnDreu8NObKsDso9gx9xm9kRLJvCE_hHL4Tijn4Sq69p9OgipY6BMpLYRG3d2K9CSmSvdNoA1HKM8uwD7-CtYLh0WFF_rctRR-pEXmoLlaASF9McRP2M5jpbPNvHl9KBQShzK3VOkS9klXQBvGp96a3VmlLd3FzsPE0S"/>
+</div>
+<div class="flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="material-symbols-outlined text-primary text-sm fill-1">star</span>
+<span class="text-xs text-sage ml-2 font-medium">(Top Rated)</span>
+</div>
+<h3 class="text-xl font-bold text-forest mb-1">Aromatic Wellness Kit</h3>
+<p class="text-sage text-sm mb-6">Signature blend of tea-infused candles and exfoliating scrubs.</p>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-forest text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 rounded-l-full blur-3xl"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-10 relative z-10">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div>
+<h2 class="text-4xl font-black mb-8 leading-tight">Closing the Loop on <br/><span class="text-primary">Tea Production</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">eco</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Sustainable Sourcing</h4>
+<p class="text-slate-300 font-light leading-relaxed">We work directly with Darjeeling's finest estates to collect tea plantation waste that would otherwise be discarded.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">biotech</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Advanced Transformation</h4>
+<p class="text-slate-300 font-light leading-relaxed">Using proprietary technology, we refine cellulose fibers and oils from leaves, stems, and seeds into high-value raw materials.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">autorenew</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Circular Impact</h4>
+<p class="text-slate-300 font-light leading-relaxed">The resulting products are 100% biodegradable, returning nutrients to the soil and completing the natural lifecycle.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<img alt="Process" class="rounded-2xl shadow-2xl relative z-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOLYRm5cYmwyOCE16O3nOOndaAZoctN085DpZcJJDvRSfxdSYcRdwbHY3FN_IStQegF7kFZZj7kF8gibOo_VWagEjYPGXj3Vd70dNABAMyXIOs84mwomO6p0fWRcMCycljU7dD4EIPIuPRfeU5Qr7tswvTeZcaOCfklxjOdASjON4EM1KAeJIMbwBXLTlMMhJ-8ELZ0pq-gvz5o_F8j8Z5KY2u2SQ_x3AH1g6mm8081y80IEjE9vBmk71f0Sha8DuUFgB9TIpVBx9a"/>
+<div class="absolute -bottom-6 -left-6 bg-primary text-forest p-8 rounded-xl z-20 max-w-[200px]">
+<p class="text-3xl font-black mb-1">0%</p>
+<p class="text-xs font-bold uppercase tracking-widest">Waste Goal in Production</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-beige">
+<div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+<div class="bg-white rounded-3xl p-12 lg:p-20 shadow-xl border border-sage/10">
+<span class="material-symbols-outlined text-primary text-6xl mb-6">forum</span>
+<h2 class="text-4xl font-black text-forest mb-6">Partner With Innovation</h2>
+<p class="text-lg text-sage mb-10 max-w-2xl mx-auto">Whether you're an investor, a retailer, or an eco-conscious consumer, we’d love to share our journey with you. Chat with our experts about our sustainable process.</p>
+<a 
+  href="https://api.whatsapp.com/send?phone=919883425303&text=Hi%20I%20want%20to%20chat%20with%20your%20team"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="inline-flex items-center gap-4 bg-primary hover:bg-forest hover:text-white text-forest px-12 py-5 rounded-full font-bold text-xl transition-all shadow-lg hover:shadow-primary/30"
+>
+  Chat with our Experts
+  <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-forest text-white pt-24 pb-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20">
+<div class="col-span-1 md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors">
+       <a href="./index.html"><img src="Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-2xl font-black tracking-tighter text-primary">CHAICYCLE</span></a>
+</div>
+<p class="text-slate-400 font-light leading-relaxed mb-8">
+                    Pioneering the circular economy in the hills of Darjeeling. Transforming tea waste into premium, sustainable essentials for a better tomorrow.
+                </p>
+<div class="flex gap-4">
+<!-- Instagram -->
+<a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer"
+   class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-forest transition-all">
+
+  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5C18.22 4 20 5.78 20 7.75v8.5c0 1.97-1.78 3.75-3.75 3.75h-8.5C5.78 20 4 18.22 4 16.25v-8.5C4 5.78 5.78 4 7.75 4zm8.75 1.5a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+  </svg>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://linkedin.com/company/chaicycle" target="_blank" rel="noopener noreferrer"
+   class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center hover:bg-primary hover:text-forest transition-all">
+
+  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+    <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.05 0 5.98 3.32 5.98 7.64V24h-5v-7.9c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.05-3.02 4.17V24h-5V8z"/>
+  </svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-8 uppercase tracking-widest text-primary">Shop</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Tea Oil Series</a></li>
+<li><a class="hover:text-white transition-colors" href="#">EcoWare Dining</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Wellness Kits</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Bulk Packaging</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-8 uppercase tracking-widest text-primary">Company</h4>
+<ul class="space-y-4 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Sustainability Report</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Press &amp; Media</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Investor Relations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-8 uppercase tracking-widest text-primary">Contact</h4>
+<ul class="space-y-4 text-slate-400">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Lopchu Bazar<br/>Darjeeling, West Bengal 734213</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>+91 98834 25303</span>
+</li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span>info.chaicycle@gmail.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-sm">© 2024 ChaiCycle. All rights reserved. Built with purpose in Darjeeling.</p>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<div class="fixed bottom-8 right-8 z-[60]">
+<a 
+  href="https://api.whatsapp.com/send?phone=919883425303&text=Hi%20I%20would%20like%20to%20chat%20with%20you"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="bg-[#25D366] text-white px-6 py-4 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center gap-3 group animate-pulse-subtle"
+>
+  <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zm-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+</svg>
+
+  <span class="font-bold whitespace-nowrap">Chat with Us</span>
+</a>
+</div>
+
+</body></html>

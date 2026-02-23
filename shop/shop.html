@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All Collections | ChaiCycle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13eca4",
+                        "forest": "#0F3D2E",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .filled-icon { font-variation-settings: 'FILL' 1; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-forest/10 bg-white/80 backdrop-blur-md dark:bg-background-dark/80 dark:border-white/10">
+<div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<div class="flex items-center gap-12">
+<div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors">
+       <a href="../index.html"><img src="../Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-forest dark:text-primary text-2xl font-black tracking-tighter">CHAICYCLE</span> </a>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-forest/70 dark:text-slate-300">
+<a class="text-forest dark:text-primary border-b-2 border-primary" href="../shop/shop.html">Shop All</a>
+<a class="hover:text-forest dark:hover:text-white transition-colors" href="../blog/blog.html">Our Story</a>
+<a class="hover:text-forest dark:hover:text-white transition-colors" href="../process/process.html">Sustainability</a>
+<a class="hover:text-forest dark:hover:text-white transition-colors" href="../contact/code.html">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="w-64 rounded-full border-none bg-slate-100 dark:bg-slate-800 py-2 pl-10 pr-4 text-sm focus:ring-2 focus:ring-primary/50" placeholder="Search collection..." type="text"/>
+</div>
+<button class="flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-forest hover:shadow-lg transition-all">
+<span class="material-symbols-outlined text-sm">storefront</span>
+                    Wholesale
+                </button>
+<button class="relative rounded-full p-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="absolute right-0 top-0 flex h-4 w-4 items-center justify-center rounded-full bg-forest text-[10px] text-white">0</span>
+</button>
+</div>
+</div>
+</header>
+<main class="mx-auto max-w-7xl px-6 py-8">
+<!-- Promotional Banner -->
+<div class="mb-10 overflow-hidden rounded-xl bg-forest dark:bg-primary/10 py-3 px-6 text-center shadow-sm">
+<p class="text-sm font-medium tracking-wide text-white dark:text-primary flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-sm">eco</span>
+                OUR PROMISE: 100% BIODEGRADABLE &amp; CIRCULAR DESIGN IN EVERY PRODUCT
+                <span class="material-symbols-outlined text-sm">eco</span>
+</p>
+</div>
+<div class="flex flex-col gap-8 lg:flex-row">
+<!-- Sidebar Filters -->
+<aside class="w-full shrink-0 lg:w-64 space-y-8">
+<div>
+<h3 class="text-lg font-bold text-forest dark:text-white mb-4">Filters</h3>
+<div class="space-y-6">
+<!-- Categories -->
+<div class="space-y-3">
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400">Category</p>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest/80 dark:text-slate-300 group-hover:text-forest transition-colors">Tea Oil</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest dark:text-primary font-medium">EcoWare</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest/80 dark:text-slate-300 group-hover:text-forest transition-colors">Wellness</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest/80 dark:text-slate-300 group-hover:text-forest transition-colors">Packaging</span>
+</label>
+</div>
+</div>
+<!-- Price Range -->
+<div class="space-y-4">
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400">Price Range</p>
+<div class="relative pt-1">
+<div class="h-1 w-full rounded-full bg-slate-200 dark:bg-slate-700">
+<div class="absolute h-1 w-3/4 rounded-full bg-primary left-0"></div>
+</div>
+<div class="absolute top-0 left-0 size-3 -translate-y-1/4 rounded-full border-2 border-white bg-primary shadow"></div>
+<div class="absolute top-0 left-3/4 size-3 -translate-y-1/4 rounded-full border-2 border-white bg-primary shadow"></div>
+</div>
+<div class="flex items-center justify-between text-xs font-medium text-slate-500">
+<span>$0</span>
+<span>$150</span>
+</div>
+</div>
+<!-- Availability -->
+<div class="space-y-3">
+<p class="text-xs font-bold uppercase tracking-wider text-slate-400">Availability</p>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest/80 dark:text-slate-300 group-hover:text-forest transition-colors">In Stock Only</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="h-4 w-4 rounded border-slate-300 text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-forest/80 dark:text-slate-300 group-hover:text-forest transition-colors">Coming Soon</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Sidebar Promo -->
+<div class="rounded-xl bg-primary/5 p-6 border border-primary/20">
+<p class="text-xs font-bold text-primary uppercase mb-2">Pre-Launch Offer</p>
+<p class="text-sm font-semibold text-forest dark:text-slate-200 mb-4">Get 20% off your first order by joining the waitlist.</p>
+<button class="w-full rounded-lg bg-forest dark:bg-primary py-2 text-xs font-bold text-white dark:text-forest hover:opacity-90 transition-opacity uppercase tracking-widest">Join Waitlist</button>
+</div>
+</aside>
+<!-- Product Grid Section -->
+<div class="flex-1">
+<!-- Sorting & Stats -->
+<div class="mb-6 flex items-center justify-between">
+<p class="text-sm text-slate-500 font-medium">Showing <span class="text-forest dark:text-white">12 Products</span></p>
+<div class="flex items-center gap-2">
+<span class="text-sm font-medium text-slate-500">Sort By:</span>
+<select class="rounded-lg border-none bg-transparent text-sm font-bold text-forest dark:text-white focus:ring-0 cursor-pointer">
+<option>Newest Arrivals</option>
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+<!-- Product Card 1 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100 mb-4">
+<img alt="Organic Tea Seed Oil" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Premium glass bottle of organic golden tea seed oil" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS1vYV_ov3Tic6RYqg0usGqih_Dfo4HAlmYGY6u_NsRCkKHobZxQvJGgWWR7wpcqoZFlgODxL8zvDLrJ7_TXucrozmZip4OivQ6XiYytgeM4a-jSDd-y_8k2yG_dBOjyrjP_pWoXfgFofcAv8cBex2h27S5HNuYc-lI5Ui8WMgsrf6EmTVQvfYxR2zQUPI1Yfbi1KKI2BqgS-Rnr8hpUReIo3C9rPqKn3ymZcKtdafTZ0PDNsVMXMQ3Af5Md0i4bN-Zjobcnqrkzsw"/>
+<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-forest backdrop-blur shadow-sm">Coming Soon</span>
+<button class="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="flex flex-1 flex-col">
+<div class="mb-1 flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="ml-1 text-[10px] text-slate-400">(42 Reviews)</span>
+</div>
+<h3 class="text-sm font-bold text-forest dark:text-white group-hover:text-primary transition-colors">Organic Tea Seed Oil</h3>
+<p class="mb-4 mt-1 text-xs text-slate-500 line-clamp-1 italic">Pure essence of cold-pressed tea seeds.</p>
+<div class="mt-auto">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-lg font-bold text-forest dark:text-white">$45.00</span>
+</div>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100 mb-4">
+<img alt="Recycled Glass Infuser" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Modern minimalist recycled glass tea infuser bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA50UdWSsNxqa7aTTV0q01kz3uW18haPcBTc4SQSu-NYBQofewZzJ-LZJ2jE7nY3qcS-Pqfp6rV1fZnGbpLIpaAz0jIF-QmiCz3e45slSN23PxNA_q8leE1rMOIqR0pMlCRfAwMMXenWjSkXUzdyHROD41Br4L67N87q8BdqoOTDcLwzMGwycXSJqEu_63FBfKXzKPNUoKs9QmAYXGZbmMS1Ox6fdDhoqQnEqXvVG65kSfWvysx5Hfws0B__RT_J84czPG4ocDRsB4F"/>
+<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-forest backdrop-blur shadow-sm">Coming Soon</span>
+<button class="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="flex flex-1 flex-col">
+<div class="mb-1 flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="ml-1 text-[10px] text-slate-400">(18 Reviews)</span>
+</div>
+<h3 class="text-sm font-bold text-forest dark:text-white group-hover:text-primary transition-colors">Glass Tea Infuser</h3>
+<p class="mb-4 mt-1 text-xs text-slate-500 line-clamp-1 italic">Borosilicate glass with recycled bamboo lid.</p>
+<div class="mt-auto">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-lg font-bold text-forest dark:text-white">$32.00</span>
+</div>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100 mb-4">
+<img alt="Eco-Friendly Bento" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Earthy bamboo composite bento box with strap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBecdR1XlcBwNn1_391ic14lUSvBMrp_hB8V6r-G9KNQGyLbsLClNfei3U9ITiIXxbbo7T7sm_mCIkMp2mhOJcxXzgHxmk3tVoDE3OzDmQnrbmdAdj1GVzSfBz5KIcFopKlEpMHF_fLABOGsTtcO0yniW6x1OkgzzSlImiIW8X9_CKHPiHRQWlNgjGG99V_rUcdRZqvEGQP-X_pBCgpt-4Y0CQMLOxN-Tl7xmdqE-D0NQKoHDjxd21rBHFeGY8z9wfLS7j6DgNNGQ6U"/>
+<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-forest backdrop-blur shadow-sm">Coming Soon</span>
+<button class="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="flex flex-1 flex-col">
+<div class="mb-1 flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="ml-1 text-[10px] text-slate-400">(25 Reviews)</span>
+</div>
+<h3 class="text-sm font-bold text-forest dark:text-white group-hover:text-primary transition-colors">Bamboo Bento Set</h3>
+<p class="mb-4 mt-1 text-xs text-slate-500 line-clamp-1 italic">Lightweight, durable, 100% compostable.</p>
+<div class="mt-auto">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-lg font-bold text-forest dark:text-white">$28.00</span>
+</div>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100 mb-4">
+<img alt="Hemp Tote Bag" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Natural hemp fiber reusable tote bag" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd6fNXE8fCfCnXhAdj6BmeMi5uf12q8IEnlN8hIgg-WrClw3J2ZX5Y1Ko8j5yatgfeDaU23KYwGETkr1N5gP7ZhtglWDpdhnAP1Fdmq_OVVF71WTkqmVdOr17LnhdmhrV5nOdUO_lXz2TOvt_9tV-H-MoVTnYbUTneveGjuJMEUEGEzwR06RjX2r2n7JDKMIGvKFwpQtmk-W49zk79p2aWE2w5BVkFiT-6XFbIMJQZhHlcYuHfb535EMjOAYkzTm4y_53Glddppovx"/>
+<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-forest backdrop-blur shadow-sm">Coming Soon</span>
+<button class="absolute right-3 top-3 rounded-full bg-white/90 p-2 text-slate-400 hover:text-red-500 transition-colors shadow-sm">
+<span class="material-symbols-outlined text-sm">favorite</span>
+</button>
+</div>
+<div class="flex flex-1 flex-col">
+<div class="mb-1 flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+<span class="ml-1 text-[10px] text-slate-400">(64 Reviews)</span>
+</div>
+<h3 class="text-sm font-bold text-forest dark:text-white group-hover:text-primary transition-colors">Circular Hemp Tote</h3>
+<p class="mb-4 mt-1 text-xs text-slate-500 line-clamp-1 italic">Reinforced stitching for ultimate longevity.</p>
+<div class="mt-auto">
+<div class="mb-3 flex items-center justify-between">
+<span class="text-lg font-bold text-forest dark:text-white">$19.00</span>
+</div>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- Additional Product Cards (Repeat Pattern) -->
+<!-- Product Card 5 -->
+<div class="group flex flex-col">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-100 mb-4">
+<img alt="Calm Tea Blend" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Bag of loose leaf tea blend with herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpJYxeur3iPkkevBe2M2y0Er-_v7aDtvThPIcP7wToOO7SmbN1XUf4xYvJ6J7RQFFt2_KxyVpfTLextOG2Vmk4VtnHULS3ymp6na76P5dL9U36Bc5ZV1m6qotG6mzMGt9y-urmn-xjB2LOCJuYkSVKZl52-MAl4FfM6w7CV3_FRKROzKvfh9SkXRYVjbJi2RjytJApxJx3S_N6xBoBkBgHFA3-VTvwcTkHZrvCgKtEBtTkGGP8NKaGTjiYIuuaSthO7Phn4ooHOSdg"/>
+<span class="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-forest backdrop-blur shadow-sm">Coming Soon</span>
+</div>
+<div class="flex flex-1 flex-col">
+<div class="mb-1 flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+<span class="material-symbols-outlined text-xs filled-icon">star</span>
+</div>
+<h3 class="text-sm font-bold text-forest dark:text-white group-hover:text-primary transition-colors">Evening Calm Blend</h3>
+<p class="mb-4 mt-1 text-xs text-slate-500 italic">Chamomile and white tea base.</p>
+<div class="mt-auto">
+<span class="block mb-3 text-lg font-bold text-forest dark:text-white">$22.00</span>
+<a href="https://api.whatsapp.com/send?phone=919883425303"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="w-full bg-[#25D366] hover:bg-[#2F6F55] text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2 transition-all duration-300">
+   Buy via WhatsApp
+</a>
+</div>
+</div>
+</div>
+<!-- Repeat for 8 total placeholders -->
+<div class="group flex flex-col opacity-60">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-200 mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-slate-400">landscape</span>
+</div>
+<div class="h-4 w-3/4 bg-slate-200 rounded mb-2"></div>
+<div class="h-3 w-1/2 bg-slate-200 rounded mb-4"></div>
+<div class="mt-auto h-10 w-full bg-slate-100 rounded"></div>
+</div>
+<div class="group flex flex-col opacity-60">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-200 mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-slate-400">landscape</span>
+</div>
+<div class="h-4 w-3/4 bg-slate-200 rounded mb-2"></div>
+<div class="h-3 w-1/2 bg-slate-200 rounded mb-4"></div>
+<div class="mt-auto h-10 w-full bg-slate-100 rounded"></div>
+</div>
+<div class="group flex flex-col opacity-60">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-200 mb-4 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-slate-400">landscape</span>
+</div>
+<div class="h-4 w-3/4 bg-slate-200 rounded mb-2"></div>
+<div class="h-3 w-1/2 bg-slate-200 rounded mb-4"></div>
+<div class="mt-auto h-10 w-full bg-slate-100 rounded"></div>
+</div>
+</div>
+<!-- Pagination/Load More -->
+<div class="mt-16 flex items-center justify-center">
+<button class="rounded-full border-2 border-forest/10 px-10 py-3 text-sm font-bold text-forest hover:border-primary hover:text-primary transition-all uppercase tracking-widest dark:text-white dark:border-white/10">
+                        View All Collections
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Simple -->
+<footer class="mt-20 border-t border-forest/10 bg-white dark:bg-background-dark dark:border-white/10 py-12">
+<div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-2 mb-8">
+<div class="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-colors">
+       <a href="../index.html"><img src="../Chaicycle.png" alt="chaicycle logo" class="w-6 h-6 object-contain w-8 h-8 rounded-full"/>
+</div>
+<span class="text-2xl font-black tracking-tighter text-primary">CHAICYCLE</span></a>
+</div>
+<div class="flex gap-8 text-sm font-medium text-slate-500">
+<a class="hover:text-forest transition-colors" href="#">Privacy</a>
+<a class="hover:text-forest transition-colors" href="#">Shipping</a>
+<a class="hover:text-forest transition-colors" href="#">Terms</a>
+</div>
+<div class="flex gap-4">
+<a class="size-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">share</span>
+</a>
+<a class="size-8 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 hover:bg-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">mail</span>
+</a>
+</div>
+</div>
+<div class="mt-8 text-center text-[10px] uppercase tracking-widest text-slate-400">
+            © 2024 ChaiCycle. Premium Sustainable Living.
+        </div>
+</footer>
+</body></html>

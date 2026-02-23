@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us &amp; Inquiries | ChaiCycle</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13eca0",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#10221c",
+                        "tea-beige": "#F4F1E8",
+                        "forest-green": "#0F3D2E",
+                    },
+                    fontFamily: {
+                        "display": ["Work Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Work Sans', sans-serif; }
+        .glass-header {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 glass-header border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-3">
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3">
+      <img 
+        src="../Chaicycle.png" 
+        alt="chaicycle logo" 
+        class="w-8 h-8 object-contain rounded-full"
+      />
+      <span class="text-2xl font-black tracking-tighter text-forest-green">
+        CHAICYCLE
+      </span>
+    </a>
+</div>
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Shop</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Our Story</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Wholesale</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary hover:bg-primary/90 text-slate-900 px-6 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm">
+                    Sign Up
+                </button>
+<div class="size-10 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden border-2 border-primary/20">
+<img class="w-full h-full object-cover" data-alt="Profile avatar of a user" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkmXTaIVA5RdV15BM4lipnbO-u60Quwp4ewKFAn4gKrHlSxMYn6ca4yg8imDuVxQ_giY0XXSrHUndcJx-XiC_gXk8D1LiOBZqJxdEWvKa7d_s1TTnbIb2qENrXrTAwix8aHMipBXukcN2PjBiYtEa8-fggs6AfqmgkTLiwIjkzfH7eFEr5PUszCr-_huv9UAprwYTAQIM-pIHBGKAlMIHqZRh5IWce6ZayPSz6KF9Rp7w_QebxwwvHGO2mQTGOcfHgrVSyhdXJmf0E"/>
+</div>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-[450px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-slate-900/40 z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Misty Darjeeling tea gardens landscape at dawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPhiRNZ1p1eWE4P7gfyGZ6Bd6rFItHl0TyJnUbgO8aT-h9nfpA9f_CMUOiRUvzVml_82ZZa93ERrHGWgo-i9-Fq2p7jSccA7ZGZ2SbhxfTDtii3FXtZ3YIuxoa1uou55My_5CjsrE7M1uuxKA-ZVheU61Sxn_dPWcPV0DMyGL9OtGxcr6-DY05Q6c5rK_hSBvwrdPkhjOps5BN4xGlN7HXMWPIQaTzM0o_mJ0nI4cp2ITC6s-adAaD7d6wsTIfYZfEYSb_UOHCUb_e"/>
+<div class="relative z-20 text-center px-4">
+<h2 class="text-white text-5xl md:text-6xl font-black mb-4 tracking-tight">We'd Love to Hear From You</h2>
+<p class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto">Connecting you to the roots of Darjeeling tea. Reach out for inquiries, partnerships, or just a friendly hello.</p>
+</div>
+</section>
+<!-- Main Content Area -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<!-- Left: Inquiry Form -->
+<div class="bg-white dark:bg-slate-900/50 p-8 rounded-xl shadow-sm border border-slate-100 dark:border-slate-800">
+<h3 class="text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100">Send us a Message</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-500">Name</label>
+<input class="w-full bg-tea-beige dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-slate-900 dark:text-slate-100 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-500">Email</label>
+<input class="w-full bg-tea-beige dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-slate-900 dark:text-slate-100 transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-500">Subject</label>
+<input class="w-full bg-tea-beige dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-slate-900 dark:text-slate-100 transition-all" placeholder="Wholesale Inquiry" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-sm font-semibold uppercase tracking-wider text-slate-500">Message</label>
+<textarea class="w-full bg-tea-beige dark:bg-slate-800 border-none rounded-lg p-4 focus:ring-2 focus:ring-primary text-slate-900 dark:text-slate-100 transition-all resize-none" placeholder="Tell us how we can help..." rows="5"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-slate-900 font-bold py-4 rounded-lg shadow-lg shadow-primary/20 transition-all transform hover:-translate-y-0.5" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+<!-- Right: Contact Details -->
+<div class="space-y-10">
+<div>
+<h3 class="text-3xl font-black mb-8 text-slate-900 dark:text-slate-100">Get in Touch</h3>
+<div class="space-y-8">
+<!-- Visit Us -->
+<div class="flex gap-6 group">
+<div class="bg-primary/10 text-primary p-4 rounded-xl h-fit group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-1">Visit Us</h4>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                                        Lopchu Bazar<br/>Darjeeling, West Bengal 734213, India
+                                    </p>
+</li>
+</div>
+</div>
+<!-- Email Us -->
+<div class="flex gap-6 group">
+<div class="bg-primary/10 text-primary p-4 rounded-xl h-fit group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-1">Email Us</h4>
+<p class="text-slate-600 dark:text-slate-400">infp.chaicycle@gmail.com</p>
+</div>
+</div>
+<!-- WhatsApp Button -->
+<div class="pt-4">
+<a 
+  href="https://api.whatsapp.com/send?phone=919883425303&text=Hi%20I%20need%20support"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="flex items-center gap-4 bg-[#25D366] hover:bg-[#20bd5a] text-white px-8 py-5 rounded-xl font-bold shadow-xl shadow-green-500/20 transition-all w-full md:w-auto"
+>
+  <span class="material-symbols-outlined">chat</span>
+  Direct WhatsApp Support
+</a>
+<p class="mt-4 text-sm text-slate-400 italic">Expected response time: Under 2 hours</p>
+</div>
+</div>
+</div>
+<!-- Origin Message -->
+<div class="bg-tea-beige dark:bg-slate-800/50 p-6 rounded-xl border-l-4 border-primary">
+<p class="text-slate-700 dark:text-slate-300 italic">
+                            "Our leaves travel directly from the high-altitude gardens of Darjeeling to your cup. Every inquiry is handled by our core team in the mountains."
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full h-[400px] relative grayscale hover:grayscale-0 transition-all duration-700 border-y border-slate-200 dark:border-slate-800">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Minimalist stylized map of Darjeeling region" data-location="Darjeeling, India" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApQ-EOtqFiBSFw00w-Pcy5mNiXMSlo6GzM9B2c1Xx4xyOU8KJ9x8fgKlmvbvIeACNK72akjQEeqIvCmpPu1uZ3Gbjc3DczlhOESYkiLABlcQnv9JKQT6Z-VJgrcYPMvRnITKwYN9wwf2itmEP4BxOqAFzjIJW-B-NNM5uZPnUQp2kTA9ct7SCqm82i_Fc0VFRsIKtTiT_lAVPhcK0pqXXJ4RqkKpmFfXk1HYCQS0rtNd2vb25LuNBjkiogmMNmGfj6qY4dMCiBDrLW"/>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/30 rounded-full animate-ping"></div>
+<div class="relative bg-white dark:bg-slate-900 p-3 rounded-full shadow-2xl border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-forest-green text-white py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+    <!-- Logo -->
+    <a href="./index.html" class="flex items-center gap-3">
+      <img 
+        src="../Chaicycle.png" 
+        alt="chaicycle logo" 
+        class="w-8 h-8 object-contain rounded-full"
+      />
+      <span class="text-2xl font-black tracking-tighter text-primary">
+        CHAICYCLE
+      </span>
+    </a>
+</div>
+<p class="text-white/60 font-light leading-relaxed">
+                        Sustainable tea from the heart of the Himalayas. We cycle the best of Darjeeling to your doorstep.
+                    </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase tracking-widest text-sm text-primary">Shop</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Black Teas</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Green Teas</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Special Reserve</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Subscription</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold uppercase tracking-widest text-sm text-primary">Company</h4>
+<nav class="flex flex-col gap-2">
+<a class="text-white/70 hover:text-white transition-colors" href="#">Our Story</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Sustainability</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Wholesale</a>
+<a class="text-white/70 hover:text-white transition-colors" href="#">Careers</a>
+</nav>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold uppercase tracking-widest text-sm text-primary">Follow Us</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary hover:text-slate-900 transition-all" href="#">
+<svg class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/40">
+<p>© 2024 ChaiCycle Darjeeling. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
